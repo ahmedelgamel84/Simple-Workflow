@@ -34,12 +34,7 @@ workflows:
     jobs:
       - build
       - test:
-        requires: build
+          requires: build
       - analyze:
-        requires: testt
+          requires: test
 
-
-      - print_hello_world
-      - print_output_file
-        #requires:
-          #- print_hello_world
