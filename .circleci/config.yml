@@ -21,7 +21,7 @@ jobs:
             echo $MY_ENV_VAR
   print_hello_world:
     docker:
-      - image: cimg/base:2020.01
+      - image: circleci/node:13.8.0
     steps:
       - checkout
       - run:
@@ -34,7 +34,7 @@ jobs:
 
   print_output_file:
     docker:
-      - image: cimg/base:2020.01
+      - image: circleci/node:13.8.0
     steps:
       - checkout
       - attach_workspace:
