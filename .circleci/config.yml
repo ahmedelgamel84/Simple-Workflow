@@ -35,8 +35,8 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: echo "text to output here" > output.txt
           command: |
+            echo "text to output here" > output.txt &&
             sudo -u root createuser -h localhost --superuser ubuntu &&
             sudo createdb -h localhost test_db
       - run:
