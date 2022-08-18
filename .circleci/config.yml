@@ -33,10 +33,10 @@ workflows:
   say-hello-workflow:
     jobs:
       - build
-      - test
+      #- test
           #requires: 
             #- build
-      - analyze
+      #- analyze
           #requires: 
            # - test
 
